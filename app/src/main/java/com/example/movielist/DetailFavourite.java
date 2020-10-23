@@ -11,5 +11,7 @@ public class DetailFavourite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_favourite);
         //get extra
+
+        //tampilkan data di sini
     }
 }
