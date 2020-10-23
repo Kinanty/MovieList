@@ -39,7 +39,11 @@ public class ListDataFavourite extends AppCompatActivity {
             public void onClick(int position) {
                 // intent ke detail movie
                 Intent move = new Intent(getApplicationContext(), DetailFavourite.class);
-                move.putExtra("title", DataArrayList.get(position).getJudul());
+                move.putExtra("judul",DataArrayList.get(position).getJudul());
+                move.putExtra("path",DataArrayList.get(position).getPath());
+                move.putExtra("date",DataArrayList.get(position).getReleaseDate());
+                move.putExtra("deskripsi",DataArrayList.get(position).getDesc());
+
                 startActivity(move);
             }
 
